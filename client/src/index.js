@@ -11,9 +11,7 @@ import App from "./App";
 import "styles/index.scss";
 import { ThreeDots } from "react-loader-spinner";
 
-const BASE_URL = "http://localhost:8080";
-
-axios.defaults.baseURL = BASE_URL;
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
 const container = document.getElementById("root");
 const root = createRoot(container);
