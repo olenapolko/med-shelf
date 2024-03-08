@@ -1,0 +1,38 @@
+@import 'styles/style';
+
+.cartPageWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.emptyCartPageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: calc(100vh - 105px);
+}
+
+.imgWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: $grey-bg;
+}
+
+
+.text{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.button{
+    @extend %button;
+    background-color: $accent-color;
+    color: $white-text;
+}

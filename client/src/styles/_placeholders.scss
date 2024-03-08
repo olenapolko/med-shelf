@@ -1,0 +1,47 @@
+%wrapper {
+  overflow-y: auto;
+  height: 88vh;
+  border-radius: 10px;
+}
+
+%input {
+  background-color: transparent;
+  border: 1px solid $dark-grey-border;
+  box-shadow: $primary-shadow;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: border $primary-transition-style;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $grey-text;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+}
+
+%button {
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: $black-text;
+  background-color: $grey-bg;
+  transition: all $primary-transition-style;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $white-text;
+    background-color: $accent-hover;
+    cursor: pointer;
+    box-shadow: $primary-shadow;
+  }
+}

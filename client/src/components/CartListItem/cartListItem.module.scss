@@ -1,0 +1,76 @@
+@import "styles/style";
+
+.listItem {
+  position: relative;
+
+  display: flex;
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  box-shadow: $primary-shadow;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.img {
+  display: block;
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.button {
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(245, 244, 250, 0.7);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #b002022c;
+  }
+}
+
+.icon {
+  color: $warning-color;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid $light-grey-border;
+  border-top: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: center;
+  padding-right: 22px;
+  margin-bottom: 10px;
+}
+
+.price {
+  @extend .name;
+  font-size: 1.15em;
+}
+
+.input {
+  @extend %input;
+  padding: 5px 25 5px 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-size: 1.35em;
+  width: 75%;
+}

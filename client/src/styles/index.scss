@@ -1,0 +1,65 @@
+@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+@import './style.scss';
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  color: $black-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+.active{
+  color: $accent-hover;
+  font-weight: 800;
+}
+
+.activeShop{
+  border-color: $accent-hover;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  min-width: 1280px;
+  max-width: 1440px;
+}
+
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }

@@ -1,0 +1,18 @@
+@import "styles/style";
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.listItem:nth-child(odd) {
+  border-right: 1px solid $light-grey-border;
+}
+
+.listText {
+  margin-left: 20px;
+}

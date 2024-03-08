@@ -1,0 +1,31 @@
+@import "styles/style";
+
+.historyListItem {
+  max-width: 1200px;
+  border: 1px solid $grey-bg;
+  padding: 40px 80px;
+  border-radius: 10px;
+  box-shadow: $primary-shadow;
+  margin-bottom: 40px;
+}
+
+.orderInfo {
+  margin-bottom: 20px;
+}
+
+.orderId {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.orderDate {
+  margin-bottom: 5px;
+}
+
+.orderPrice {
+}
+
+.error {
+  color: $warning-color;
+}
